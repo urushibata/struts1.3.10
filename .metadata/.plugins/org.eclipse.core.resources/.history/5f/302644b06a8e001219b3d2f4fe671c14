@@ -1,0 +1,9 @@
+package com.urushibata.struts1.form;
+
+import org.apache.struts.action.ActionFormBean;
+
+public class LoginFormBean extends ActionFormBean {
+	private String userName;
+	private String userPassword;
+
+}

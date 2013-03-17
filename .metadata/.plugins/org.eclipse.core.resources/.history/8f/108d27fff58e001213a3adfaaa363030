@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+		"http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean
+			name="LoginFormBean"
+			type="com.urushibata.struts1.form.LoginFormBean">
+		</form-bean>
+	</form-beans>
+
+	<action-mappings>
+		<action
+			path="/login"
+			type="com.urushibata.struts1.action.LoginAction"
+			name="LoginFormBean"
+			validate="false"
+			parameter="excute">
+				<forward name="success" path="/contents/jsp/login.jsp" />
+		</action>
+
+		<action
+			path="/Auth"
+			type="com.urushibata.struts1.action.LoginAction"
+			name="LoginFormBean"
+			validate="true"
+			scope="session"
+			input="/contents/jsp/login.jsp"
+			parameter="excute">
+				<forward name="success" path="/contents/jsp/mentenance.jsp" />
+		</action>
+	</action-mappings>
+
+	<!-- Message Resources Definitions -->
+	<message-resources parameter="MessageResources" />
+
+	<!-- Validator plugin -->
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property
+			property="pathnames"
+			value="/org/apache/struts/validator/validator-rules.xml, /WEB-INF/validation.xml" />
+	</plug-in>
+
+</struts-config>

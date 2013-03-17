@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+
+header{
+	background-color: #ffffff;
+	color: #00000;
+}

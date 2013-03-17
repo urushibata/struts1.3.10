@@ -1,0 +1,9 @@
+errors.header=<div style="color: red" >
+errors.prefix=
+errors.suffix=<br />
+errors.footer=</div>
+
+errors.required={0}????????
+
+logonForm.userName=??
+logonForm.userPassword=?????

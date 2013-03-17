@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+<html:html>
+	<HEAD>
+	
+	</HEAD>
+	<BODY>
+		<HEADER>
+		<H1>Hello !! Struts1.3.10 Running</H1>
+		</HEADER>
+
+		<ARTICLE>
+			<html:form action="/Auth">
+				<label for="userName" >名前</label>
+				<html:text property="userName" styleId="userName"/>
+				<label for="userPassword" >パスワード</label>
+				<html:password property="userPassword" styleId="userPassword" />
+				<html:submit property="loginAuth" value="ログイン"/>
+			</html:form>
+		</ARTICLE>
+
+		<FOOTER>
+		</FOOTER>
+	</BODY>
+</html:html>

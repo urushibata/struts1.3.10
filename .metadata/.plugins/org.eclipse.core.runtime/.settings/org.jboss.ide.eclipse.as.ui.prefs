@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.jboss.ide.eclipse.as.ui.defaultWebServer=\u30ED\u30FC\u30AB\u30EB\u30FB\u30DB\u30B9\u30C8 \u306E Tomcat v7.0 \u30B5\u30FC\u30D0\u30FC
+org.jboss.ide.eclipse.as.ui.preferences.disabled.automatic.server.view=true
+org.jboss.ide.eclipse.as.ui.preferences.enabledDecorators.1=true
+org.jboss.ide.eclipse.as.ui.wizards.LAST_SERVER_CREATED=\u30ED\u30FC\u30AB\u30EB\u30FB\u30DB\u30B9\u30C8 \u306E Tomcat v7.0 \u30B5\u30FC\u30D0\u30FC

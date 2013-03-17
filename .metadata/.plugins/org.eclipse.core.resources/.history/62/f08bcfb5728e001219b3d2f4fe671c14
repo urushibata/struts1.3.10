@@ -1,0 +1,7 @@
+package com.urushibata.struts1.action;
+
+import org.apache.struts.action.Action;
+
+public class LoginAction extends Action {
+	return (mapping.findForward("success"));
+}

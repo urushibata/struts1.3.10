@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+		  "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+		  "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean
+			name="LoginFormBean"
+			type="com.urushibata.struts1.form.LoginFormBean">
+		</form-bean>
+	</form-beans>
+
+	<action-mappings>
+		<action
+			path="/Input"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/pages/Input.jsp"/>
+
+<!--
+		<action
+			path="/InputSubmit"
+			type="app.InputAction"
+			name="inputForm"
+			scope="request"
+			validate="true"
+			input="/pages/Input.jsp"/>
+-->
+	</action-mappings>
+
+
+<!--  Message Resources Definitions -->
+<!--	<message-resources parameter="MessageResources" />  -->
+
+<!--  Plug Ins Configuration -->
+
+	<!--  Tiles plugin -->
+	<!--
+		<plug-in className="org.apache.struts.tiles.TilesPlugin" >
+			<set-property property="definitions-config"
+				value="/WEB-INF/tiles-defs.xml" />
+			<set-property property="moduleAware" value="true" />
+		</plug-in>
+	-->
+
+	<!-- Validator plugin -->
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property
+		property="pathnames"
+		value="/org/apache/struts/validator/validator-rules.xml,
+		/WEB-INF/validation.xml"/>
+	</plug-in>
+</struts-config>
+

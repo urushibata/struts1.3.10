@@ -1,0 +1,17 @@
+package com.urushibata.struts1.businessLogic;
+
+public class UserAuthentication {
+	/*
+	 * コンストラクタ
+	 */
+	public UserAuthentication(){}
+
+	/*
+	 * ユーザ認証
+	 */
+	public String authentication(){
+		private String result;
+
+		return
+	}
+}

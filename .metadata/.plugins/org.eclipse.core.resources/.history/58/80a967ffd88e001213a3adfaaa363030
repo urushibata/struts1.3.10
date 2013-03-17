@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+<html:html>
+	<HEAD>
+		<link rel="stylesheet" href="<html:rewrite page="/contents/style/common.css"/>" type="text/css"/>
+	</HEAD>
+	<BODY>
+		<header>
+			<H1>Hello !! Struts1.3.10 Running</H1>
+		</header>
+
+		<ARTICLE>
+			<SECTION>
+				<html:form action="/Auth" target="_self" >
+					<table>
+						<tbody>
+							<tr>
+								<th>
+									<label for="userName" >名前</label>
+								</th>
+								<td>
+									<html:text property="userName" styleId="userName"/>
+									<html:errors header="false" footer="false" property="userName" />
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="userPassword" >パスワード</label>
+								</th>
+								<td>
+									<html:password property="userPassword" styleId="userPassword" />
+									<html:errors header="false" footer="false" property="userPassword" />
+								</td>
+							</tr>
+							<tr>
+								<th />
+								<td>
+									<html:submit property="loginAuth" value="ログイン"/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</html:form>
+			</SECTION>
+		</ARTICLE>
+
+		<FOOTER>
+		</FOOTER>
+	</BODY>
+</html:html>

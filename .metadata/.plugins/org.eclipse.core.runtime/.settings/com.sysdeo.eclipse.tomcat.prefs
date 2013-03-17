@@ -1,0 +1,12 @@
+configMode=serverFile
+contextsDir=C\:\\usr\\opp\\apache-tomcat-7.0.35\\conf\\Catalina\\localhost
+eclipse.preferences.version=1
+fixTomcatHomeBug=fixed
+managerPassword=root
+managerUrl=http\://localhost\:8080/manager
+managerUser=root
+projectsInSourcePath=struts1.3.10;
+tomcatConfigFile=C\:\\usr\\opp\\apache-tomcat-7.0.35\\conf\\server.xml
+tomcatDir=C\:\\usr\\opp\\apache-tomcat-7.0.35
+tomcatJRE=1363442125595
+tomcatVersion=tomcatV7

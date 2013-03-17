@@ -1,0 +1,34 @@
+package com.urushibata.struts1.businessLogic;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+import java.sql.Connection;
+
+/*
+ * ユーザ認証クラス
+ */
+public class UserAuthentication {
+	/*
+	 * コンストラクタ
+	 */
+	public UserAuthentication(){}
+
+	/*
+	 * ユーザ認証
+	 */
+	public String authentication(){
+		String result = "";
+
+		try{
+			Context objCtx = new InitialContext();
+		  dataSource = (DataSource)objCtx.lookup("java:comp/env/jdbc/oracle");
+		}catch(NamingException ex){
+		  ex.printStacktrace();
+		}
+
+		Connection connection = dataSource.getConnection();
+		return result;
+	}
+}

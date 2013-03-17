@@ -1,0 +1,12 @@
+package com.urushibata.struts1.action;
+
+import org.apache.struts.action.Action;
+
+public class LoginAction extends Action {
+	public ActionForward execute(ActionMapping mapping,
+			ActionForm form,
+			HttpServletRequest req,
+			HttpServletResponse res) {
+	return (mapping.findForward("success"));
+	}
+}

@@ -1,0 +1,43 @@
+package com.urushibata.struts1.businessLogic;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+/*
+ * ユーザ認証クラス
+ */
+public class UserAuthentication {
+	/*
+	 * コンストラクタ
+	 */
+	public UserAuthentication(){}
+
+	/*
+	 * ユーザ認証
+	 */
+	public String authentication() throws SQLException{
+		Connection conn = null;
+		String result = "";
+
+		try{
+			Context initContext = new InitialContext();
+			Context envContext  = (Context)initContext.lookup("java:/comp/env");
+			DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle");
+			conn = ds.getConnection();
+		}catch(NamingException ex){
+			return "NG";
+		}
+		Statement stmt = (Statement) conn.createStatement();
+		Resultset rest = stmt
+
+
+
+		return result;
+	}
+}

@@ -1,0 +1,27 @@
+package com.urushibata.struts1.form;
+
+import org.apache.struts.action.ActionFormBean;
+
+public class LoginFormBean extends ActionFormBean {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+	private String userName;
+	private String userPassword;
+
+	public void setUserName(String userName){
+		this.userName = userName;
+	}
+
+	public String getUserName(){
+		return userName;
+	}
+	public void setUserPassword(String userPassword){
+		this.userPassword = userPassword;
+	}
+
+	public String getUserPassword(){
+		return userPassword;
+	}
+}

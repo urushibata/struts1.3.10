@@ -1,0 +1,28 @@
+package com.urushibata.struts1.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.actions.*;
+
+import com.urushibata.struts1.businessLogic.UserAuthentication;
+
+public class LoginAction extends MappingDispatchAction{
+
+	public ActionForward execute(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		return mapping.findForward("success");
+	}
+
+	public ActionForward authentication(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		/*
+		 * 認証ビジネスロジック
+		 */
+		UserAuthentication ut = new UserAuthentication();
+		return mapping.findForward(ut.authentication());
+	}
+}
