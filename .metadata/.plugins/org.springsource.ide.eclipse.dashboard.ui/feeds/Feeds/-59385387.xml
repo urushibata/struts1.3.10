@@ -6,6 +6,37 @@
  <description>Welcome to the home of Spring, the leading platform to build and run enterprise Java applications. Led and sustained by SpringSource, Spring delivers significant benefits for many projects, increasing development productivity and runtime performance while improving test coverage and application quality.</description>
  <language>en</language>
 <item>
+ <title>Webinar Replay: Multi-Client Development with Spring</title>
+ <link>http://www.springsource.org/node/4274</link>
+ <description>&lt;H1&gt;Multi Client Development with Spring&lt;/H1&gt;
+&lt;DIV&gt;
+  &lt;p&gt;  No application is an island and this is more obvious today than ever as applications extend their reach into people&#039;s pockets, desktops, tablets, TVs, Blu-ray players and cars. What&#039;s a modern developer to do to support these many platforms? In this talk, join Josh Long to learn how Spring can extend your reach through (sometimes Spring Security OAuth-secured) RESTful services exposed through Spring MVC, HTML5 and client-specific rendering thanks to Spring Mobile, and powerful, native support for Android with Spring Android.&lt;/p&gt;
+  &lt;p&gt;&lt;center&gt;&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/xqlohLMdQ8w&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/center&gt;
+&lt;/p&gt;
+  &lt;BR&gt;
+&lt;/DIV&gt;
+&lt;DIV&gt;
+  &lt;center&gt;
+  &lt;/center&gt;
+&lt;div&gt;
+    &lt;div&gt;
+      &lt;h2&gt;About the speaker&lt;/h2&gt;
+      &lt;div&gt; &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/josh_long&quot;&gt;&lt;img src=&quot;http://www.springone2gx.com/s/images/bio/40784_Long_20110418_132926_medium_sq.jpg&quot; alt=&quot;Josh Long&quot; /&gt;&lt;/a&gt;
+        &lt;div&gt;
+          &lt;h3&gt;Josh Long&lt;/h3&gt;
+          &lt;p&gt;Josh Long is the Spring developer advocate. Josh is the lead   author on Apress&amp;rsquo; Spring Recipes, 2nd Edition, and a SpringSource   committer and contributor. When he&#039;s not hacking on code, he can be   found at the local Java User Group or at the local coffee shop. Josh   likes solutions that push the boundaries of the technologies that enable   them. His interests include scalability, BPM, grid processing, mobile   computing and so-called &amp;quot;smart&amp;quot; systems. He blogs at   blog.springsource.org or joshlong.com.&lt;/p&gt;
+          &lt;a href=&quot;http://www.springone2gx.com/conference/washington/2012/10/speakers/josh_long&quot;&gt;More About Josh Å‚&lt;/a&gt; &lt;br /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</description>
+ <comments>http://www.springsource.org/node/4274#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Mon, 18 Mar 2013 18:11:07 +0000</pubDate>
+ <dc:creator>Pieter Humphrey</dc:creator>
+ <guid isPermaLink="false">4274 at http://www.springsource.org</guid>
+</item>
+<item>
  <title>New Discounts On Spring Trainings Worldwide</title>
  <link>http://www.springsource.org/spring-education-discounts-mar2013</link>
  <description>&lt;p&gt;SpringSource still has some seats left for the top Spring Framework classes: Core Spring, Spring Web and Enterprise Integration with Spring in Europe. If you register now, you can &lt;b&gt;SAVE 30%&lt;/b&gt; on the remaining Spring training class seats for:&lt;/p&gt;
@@ -414,74 +445,6 @@ If you have chosen STS to build your applications we would like to offer you a d
  <pubDate>Wed, 06 Mar 2013 23:30:37 +0000</pubDate>
  <dc:creator>Gary Russell</dc:creator>
  <guid isPermaLink="false">4244 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>This Week in Spring  - March 5th, 2013</title>
- <link>http://www.springsource.org/node/4243</link>
- <description> 
-&lt;P&gt; 
-   Welcome back to another installment of &lt;EM&gt;This Week in Spring&lt;/EM&gt;. 
-   
-   We&#039;ve got a lot to cover, though, so let&#039;s get to it!
-&lt;/P&gt;
-&lt;OL&gt; 
- &lt;LI&gt;I&#039;m presenting a webinar on March 14, 2013 - &lt;a href=&quot;http://www.springsource.org/node/4033&quot; title=&quot;Webinar: Multi Client Development with Spring&quot;&gt; Multi Client Development with Spring&lt;/a&gt;! Join me to learn about REST, OAuth, Spring MVC, Spring Android, and much more!&lt;/LI&gt;
- &lt;LI&gt;Join Damien Dallimore and David Turanski on a webinar as they introduce the &lt;a href=&quot;http://www.springsource.org/node/4036&quot; title=&quot;Webinar: Extending Spring Integration for Splunk&quot;&gt;Webinar: Extending Spring Integration for Splunk&lt;/a&gt; - March 28th, 2013&lt;/LI&gt;
- &lt;LI&gt;New SpringOne2GX replays now available in HD on YouTube: &lt;a href=&quot;http://www.springsource.org/node/4242&quot;&gt;Spring Data Repositories: A Deep Dive, and Intro to Cascading&lt;/a&gt;&lt;/LI&gt;
- &lt;LI&gt;&lt;A href=&quot;http://twitter.com/SpringSource&quot;&gt;@SpringSource&lt;/A&gt; is launching a &lt;A href=&quot;http://springbagoswag.cloudfoundry.com/&quot;&gt;(quick) swag-giveaway campaign&lt;/a&gt;!  
- &lt;/LI&gt;  
- 
-	 
- &lt;LI&gt;
-	 &lt;A href=&quot;https://twitter.com/rob_winch/status/308723194255265793&quot;&gt;Spring Security lead and ninja Rob Winch&lt;/a&gt; has announced the initial support for &lt;a href=&quot;https://github.com/SpringSource/spring-security-javaconfig/&quot;&gt;Java-based  configuration in Spring Security&lt;/a&gt;. 
-		 This is a wonderful milestone. Recently, we&#039;ve seen Java-configuration alternatives   to the XML DSLs offered  for Spring Social, Spring Batch and - now - Spring Security. Check out the Spring Security Java-based configuration for more details. 
-	 
-	    
- 	
- &lt;/LI&gt; 
- 
- &lt;LI&gt;  
-	 I had the unique privilege  of  visiting the Alibaba group in China where they&#039;re doing some &lt;EM&gt;amazing&lt;/EM&gt; things with Spring. Read more in my blog, &lt;A href=&quot;http://blog.springsource.org/2013/03/04/spring-at-china-scale-alibaba-group-alipay-taobao-and-tmall/&quot;&gt;Spring at China Scale: the Alibaba group&lt;/a&gt;.  &lt;/LI&gt;
-
- &lt;LI&gt; Someone asked me this the other day and I felt like it was worthy of a mention: in your Spring MVC &lt;CODE&gt;@Controller&lt;/code&gt; class handler methods, make sure that the &lt;CODE&gt;BindingResult&lt;/code&gt; argument is immediately after the &lt;EM&gt;model&lt;/EM&gt; or &lt;EM&gt;command&lt;/em&gt; argument, like this:
-	 
-	 &lt;CODE&gt;@RequestMapping(...) public String handleRequest( @ModelAttribute @Valid YourCustomPojo attempt, BindingResult result)&lt;/code&gt;. 
-		 
-		 In this example, &lt;CODE&gt;handleRequest&lt;/Code&gt; will validate the POJO (&lt;CODE&gt;YourCustomPojo&lt;/code&gt;) - checking the POJO for JSR303-annotations and attempting to apply the constraints because the POJO is annotated with &lt;CODE&gt;@Valid&lt;/CODE&gt; - and stash any errors  in the &lt;CODE&gt;BindingResult&lt;/code&gt;, which it makes available if we ask for it.
-		 
-		 
- &lt;/LI&gt;
- 
- &lt;LI&gt; Speaking of validation using JSR 303, I found this amazing post from 2010 that I felt worth inclusion.  &lt;A href=&quot;http://musingsofaprogrammingaddict.blogspot.com/2010/12/putting-spell-on-bean-validation-api.html&quot;&gt;This post introduces a custom annotation, called &lt;CODe&gt;@SpelAssert&lt;/code&gt;&lt;/a&gt;, that works like JSR303&#039;s &lt;CODE&gt;@ScriptAssert&lt;/code&gt;.   &lt;/LI&gt;
-	 
-  &lt;LI&gt;  Do you want to use Cloud Foundry with the continuous integration capabilities  offered by  CloudBees?  We got you covered!  The Cloud Foundry and Cloud Bees teams worked to integrate the process, and &lt;A href=&quot;http://t.co/yPhszGk5k8&quot;&gt;the step-by-step  introduction is given here&lt;/a&gt;.
-  &lt;/LI&gt;
-  &lt;!--  &lt;LI&gt; http://www.infoq.com/presentations/Spring-Data-Repositories &lt;/LI&gt;     --&gt;
-  
-  &lt;LI&gt;  &lt;A href=&quot;http://twitter.com/old_sound&quot;&gt;Alvaro Videla&lt;/a&gt;  has introduced and open-sourced &lt;A href=&quot;http://blogs.vmware.com/vfabric/2013/03/introducing-the-rabbitmq-simulator-video-open-source-bits.html &quot;&gt;his RabbitMQ simulator&lt;/a&gt;. The RabbitMQ simulator   is an &lt;EM&gt;awesome&lt;/EM&gt; visualization tool to demonstrate how RabbitMQ topologies work.
- 
-  &lt;/LI&gt;     
-   &lt;LI&gt; Gary Russell has announced &lt;a href=&quot;http://www.springsource.org/node/4241&quot;&gt; that Spring AMQP 1.1.4 is now available&lt;/a&gt;. 
-      
-   &lt;/LI&gt;     
-    &lt;LI&gt; The &lt;EM&gt;Fstyle&lt;/EM&gt; blog has an interesting post on how &lt;A href=&quot;http://fstyle.de/hp_fstyle/wordpress/2013/03/04/spring-test-spring-security-how-to-mock-authentication/&quot;&gt;to unit test Spring Security with Spring MVC test mocks&lt;/a&gt;.  &lt;/LI&gt;     
-   &lt;LI&gt; Our pal Boris Lam is back, this time with a post on how to  
-&lt;a href=&quot;http://www.javacodegeeks.com/2013/02/spring-data-mongodb-and-jsf-integration-tutorial.html&quot;&gt;	   integrate Spring Data, MongoDB and JavaServer Faces&lt;/a&gt;.
-	     &lt;/LI&gt;     
-   &lt;LI&gt; Indika Prasad, on the &lt;EM&gt;Programmer&#039;s Guide&lt;/EM&gt; blog, has put together a tutorial showing &lt;a href=&quot;http://indikapra.blogspot.com/2013/03/webdav-example-in-spring-security-with.html&quot;&gt;how to use Spring Security with Webdav and password encryption&lt;/a&gt;.
-    
-    &lt;/LI&gt;
-    &lt;LI&gt; The  &lt;EM&gt;Java J2EE SOA Key Points&lt;/EM&gt; blog has a nice post on 
-		&lt;A href=&quot;http://stlarch.blogspot.com/2013/03/spring-ws-jaxb-web-sevice-client.html&quot;&gt;using the Spring WS JAXB web service client&lt;/a&gt;. There&#039;s very little narrative, but lots of code.
-    
-     &lt;/LI&gt;
-      
-&lt;/OL&gt;</description>
- <comments>http://www.springsource.org/node/4243#comments</comments>
- <category domain="http://www.springsource.org/taxonomy/term/14">This Week in Spring</category>
- <pubDate>Tue, 05 Mar 2013 19:49:36 +0000</pubDate>
- <dc:creator>Josh Long</dc:creator>
- <guid isPermaLink="false">4243 at http://www.springsource.org</guid>
 </item>
 </channel>
 </rss>

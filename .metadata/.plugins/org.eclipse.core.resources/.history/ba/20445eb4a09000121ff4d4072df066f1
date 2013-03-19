@@ -1,0 +1,27 @@
+package com.urushibata.struts1.dto;
+
+public class LoginDTO {
+	private String userId;
+	private String userPassword;
+
+	/*
+	 * コンストラクタ
+	 */
+	public LoginDTO(){
+
+	}
+
+	public void setUserId(String userId){
+		this.userId = userId;
+	}
+
+	public String getUserId(){
+		return this.userId;
+	}	public void setUserId(String userPassword){
+		this.userId = userId;
+	}
+
+	public String getUserPassword(){
+		return this.userId;
+	}
+}

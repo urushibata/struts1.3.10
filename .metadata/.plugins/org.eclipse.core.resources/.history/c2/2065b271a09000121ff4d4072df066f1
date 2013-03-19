@@ -1,0 +1,10 @@
+package com.urushibata.struts1.dto;
+
+public class LoginDTO {
+	private String userId;
+	private String userPassword;
+
+	public LoginDTO(){
+
+	}
+}

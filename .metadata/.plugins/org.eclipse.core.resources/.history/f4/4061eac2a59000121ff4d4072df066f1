@@ -1,0 +1,44 @@
+package com.urushibata.struts1.action;
+
+import java.sql.SQLException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.actions.*;
+
+import com.urushibata.struts1.businessLogic.UserAuthentication;
+import com.urushibata.struts1.dto.LoginDTO;
+import com.urushibata.struts1.form.LoginFormBean;
+
+public class LoginAction extends MappingDispatchAction{
+	LoginFormBean lf;
+	/*
+	 * デフォルト
+	 */
+	public ActionForward init(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		System.out.println("login action init !!");
+		return mapping.findForward("success");
+	}
+
+	/*
+	 * ログイン
+	 */
+	public ActionForward authentication(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) throws SQLException {
+		/*
+		 * 認証ビジネスロジック
+		 */
+		System.out.println("login action authentication !!");
+		LoginFormBean lf = (LoginFormBean)form;
+		copyActionForm(lf);
+		UserAuthentication ut = new UserAuthentication();
+		return mapping.findForward(ut.authentication());
+	}
+
+	private copyActionForm
+}

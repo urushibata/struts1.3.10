@@ -1,0 +1,9 @@
+errors.header=<div>
+errors.prefix=<div style="color: red" >
+errors.suffix=</div><br />
+errors.footer=</div>
+
+errors.required={0}は入力必須です。
+
+logonForm.userId=ＩＤ
+logonForm.userPassword=パスワード
