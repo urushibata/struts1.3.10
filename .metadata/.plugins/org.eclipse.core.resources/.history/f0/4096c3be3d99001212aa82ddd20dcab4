@@ -1,0 +1,52 @@
+package com.urushibata.struts1.form;
+
+import org.apache.struts.validator.ValidatorForm;
+
+public class MenyFormBean extends ValidatorForm {
+	private static final long serialVersionUID = 1L;
+	private String userName;
+	private String address;
+	private String mail;
+	private String companyName;
+	private String employeeNo;
+
+	public void setUserName(String userName){
+		this.userName = userName;
+	}
+
+	public String getUserName(){
+		return userName;
+	}
+
+	public void setAddress(String address){
+		this.address = address;
+	}
+
+	public String getAddress(){
+		return address;
+	}
+
+	public void setMail(String mail){
+		this.mail = mail;
+	}
+
+	public String getMail(){
+		return mail;
+	}
+
+	public void setCompanyName(String companyName){
+		this.companyName = companyName;
+	}
+
+	public String getAddress(){
+		return address;
+	}
+
+	public void setAddress(String address){
+		this.address = address;
+	}
+
+	public String getAddress(){
+		return address;
+	}
+}

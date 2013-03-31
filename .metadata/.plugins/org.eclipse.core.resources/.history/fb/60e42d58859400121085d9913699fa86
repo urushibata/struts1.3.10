@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+<%@ taglib uri="/tags/struts-bean.tld" prefix="bean" %>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<header>
+			<h1>メンテナンス画面</h1>
+			<html:messages id="msg" message="false"  property="correlation">
+				<bean:write name="msg" ignore="true"/>
+			</html:messages>
+		</header>
+	</body>
+</html>

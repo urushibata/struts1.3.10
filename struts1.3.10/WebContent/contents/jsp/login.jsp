@@ -10,7 +10,7 @@
 	<body>
 		<header>
 			<H1>Hello !! Struts1.3.10 Running ...</H1>
-			<html:messages id="msg" message="false">
+			<html:messages id="msg" message="false"  property="correlation">
 				<bean:write name="msg" ignore="true"/>
 			</html:messages>
 		</header>

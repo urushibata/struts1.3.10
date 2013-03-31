@@ -26,6 +26,19 @@
     "javaRuntime": false
   },
   {
+    "symbolicName": "standard-1.0.6",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "72b2dab3d9723943f6f6839ef84ccc25a087e5fa",
+    "jarFileModificationDate": "2008-06-05T00:48:36+09:00",
+    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\standard-1.0.6.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "commons-validator-1.3.1",
     "version": {
       "major": -1,
@@ -273,6 +286,19 @@
     "javaRuntime": false
   },
   {
+    "symbolicName": "ojdbc6",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "77e8867a844930b6d2b8f895f557440766bdd9cf",
+    "jarFileModificationDate": "2011-08-27T10:00:28+09:00",
+    "location": "C:\\usr\\opp\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\jdbc\\lib\\ojdbc6.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -465,6 +491,19 @@
     "jarFileFingerprint": "ce11f62d348546b6417ce82557e973c7857cbae4",
     "jarFileModificationDate": "2013-01-10T22:54:30+09:00",
     "location": "C:\\usr\\opp\\apache-tomcat-7.0.35\\lib\\annotations-api.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.struts.struts-el",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 10,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dcd9a743c6225e2330904cba1bf9b2516754dc13",
+    "jarFileModificationDate": "2008-11-29T17:48:28+09:00",
+    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\struts-el-1.3.10.jar",
     "javaRuntime": false
   },
   {

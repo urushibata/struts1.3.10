@@ -1,0 +1,84 @@
+package com.urushibata.struts1.action;
+
+import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.beanutils.BeanUtils;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
+import org.apache.struts.actions.MappingDispatchAction;
+
+import com.urushibata.struts1.Service.UserAuthentication;
+import com.urushibata.struts1.common.MassageGroup;
+import com.urushibata.struts1.dto.LoginDTO;
+import com.urushibata.struts1.form.LoginFormBean;
+import com.urushibata.struts1.form.MenuFormBean;
+
+public class LoginAction extends MappingDispatchAction{
+	private LoginFormBean lf;
+	private MenuFormBean mf;
+	public LoginDTO dto = new LoginDTO();
+	/*
+	 * デフォルト
+	 */
+	public ActionForward init(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		System.out.println("login action init !!");
+		return mapping.findForward("success");
+	}
+
+	/*
+	 * ログイン
+	 */
+	public ActionForward authentication(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) throws SQLException {
+		/*
+		 * 認証ビジネスロジック
+		 */
+		System.out.println("login action authentication !!");
+		String result ="";
+		ActionMessages ams = new ActionMessages();
+		ActionMessage msg;
+
+		lf = (LoginFormBean)form;
+		copyDTO();
+
+		UserAuthentication ut = new UserAuthentication(dto);
+		result = ut.authentication();
+		if(result == "failure"){
+			msg = new ActionMessage("ＩＤまたはパスワードが違います。");
+			ams.add(MassageGroup.CORRELATION, msg);
+			super.saveErrors(req, ams);
+		}
+		copyActionForm();
+		req.setAttribute("MenuFormBean", mf);
+
+		return mapping.findForward(result);
+	}
+
+	/*
+	 * ActionFormをDTOにセット
+	 */
+	private void copyDTO(){
+		this.dto.setUserId(lf.getUserId());
+		this.dto.setUserPassword(lf.getUserPassword());
+	}
+
+	/*
+	 * DTOをActionFormにセット
+	 */
+	private void copyActionForm(){
+		mf = new MenuFormBean();
+		this.mf.setUserName(this.dto.getVO().getUserName());
+		this.mf.setAddress(this.dto.getVO().getAddress());
+		this.mf.setMail(this.dto.getVO().getMail());
+		this.mf.setCompanyName(this.dto.getVO().getCompanyName());
+		this.mf.setEmployeeNo(this.dto.getVO().getEmployeeNo());
+	}
+}

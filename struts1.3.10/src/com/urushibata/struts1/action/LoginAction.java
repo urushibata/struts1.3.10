@@ -1,7 +1,5 @@
 package com.urushibata.struts1.action;
 
-import java.sql.SQLException;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -10,19 +8,23 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
-import org.apache.struts.actions.*;
-import org.apache.struts.action.ActionMessage;
-import org.apache.struts.action.ActionMessages;
+import org.apache.struts.actions.MappingDispatchAction;
 
-import com.urushibata.struts1.businessLogic.UserAuthentication;
+import com.urushibata.struts1.Service.UserAuthentication;
+import com.urushibata.struts1.common.MassageGroup;
 import com.urushibata.struts1.dto.LoginDTO;
 import com.urushibata.struts1.form.LoginFormBean;
+import com.urushibata.struts1.form.MenuFormBean;
+
+import java.sql.SQLException;
 
 public class LoginAction extends MappingDispatchAction{
 	private LoginFormBean lf;
-	public LoginDTO dto = new LoginDTO();
+	private MenuFormBean mf;
+	private LoginDTO dto;
+
 	/*
-	 * デフォルト
+	 * 表示
 	 */
 	public ActionForward init(ActionMapping mapping, ActionForm form,
 													HttpServletRequest req, HttpServletResponse res) {
@@ -31,36 +33,56 @@ public class LoginAction extends MappingDispatchAction{
 	}
 
 	/*
-	 * ログイン
+	 * ログイン認証
 	 */
 	public ActionForward authentication(ActionMapping mapping, ActionForm form,
 													HttpServletRequest req, HttpServletResponse res) throws SQLException {
-		/*
-		 * 認証ビジネスロジック
-		 */
-		System.out.println("login action authentication !!");
+		System.out.println("login action authentication !! START");
 		String result ="";
 		ActionMessages ams = new ActionMessages();
 		ActionMessage msg;
 
+		//ActionFormをDTOにコピーする。
 		lf = (LoginFormBean)form;
-		copyActionForm(lf);
+		dto = new LoginDTO();
+		copyDTO();
+
+		//ユーザ認証
 		UserAuthentication ut = new UserAuthentication(dto);
 		result = ut.authentication();
 		if(result == "failure"){
 			msg = new ActionMessage("ＩＤまたはパスワードが違います。");
-			ams.add(ActionMessages.GLOBAL_MESSAGE, msg);
+			ams.add(MassageGroup.CORRELATION, msg);
 			super.saveErrors(req, ams);
 		}
 
+		//ActionFormにユーザ情報をコピーする。
+		mf = new MenuFormBean();
+		copyActionForm();
+		//リクエストに格納
+		req.setAttribute("MenuFormBean", mf);
+
+		System.out.println("login action authentication !! END");
 		return mapping.findForward(result);
 	}
 
 	/*
-	 * ActionFormをDTOにセット
+	 * ActionFormをDTOにコピー
 	 */
-	private void copyActionForm(LoginFormBean lf){
+	private void copyDTO(){
 		this.dto.setUserId(lf.getUserId());
 		this.dto.setUserPassword(lf.getUserPassword());
+	}
+
+	/*
+	 * DTOをActionFormにコピー
+	 */
+	private void copyActionForm(){
+		mf = new MenuFormBean();
+		this.mf.setUserName(this.dto.getVO().getUserName());
+		this.mf.setAddress(this.dto.getVO().getAddress());
+		this.mf.setMail(this.dto.getVO().getMail());
+		this.mf.setCompanyName(this.dto.getVO().getCompanyName());
+		this.mf.setEmployeeNo(this.dto.getVO().getEmployeeNo());
 	}
 }

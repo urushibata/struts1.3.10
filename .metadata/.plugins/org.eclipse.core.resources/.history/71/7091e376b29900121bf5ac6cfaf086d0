@@ -1,0 +1,61 @@
+package com.urushibata.struts1.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
+import org.apache.struts.actions.MappingDispatchAction;
+
+import com.urushibata.struts1.Service.UserAuthentication;
+import com.urushibata.struts1.common.MassageGroup;
+import com.urushibata.struts1.common.ResultLiterals;
+import com.urushibata.struts1.dto.LoginDTO;
+import com.urushibata.struts1.form.LoginFormBean;
+import com.urushibata.struts1.form.MenuFormBean;
+
+import java.sql.SQLException;
+
+public class MenuAction extends MappingDispatchAction{
+	private MenuFormBean mf;
+
+	/*
+	 * 表示
+	 */
+	public ActionForward init(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		System.out.println("menu action init !!");
+		return mapping.findForward("success");
+	}
+
+	/*
+	 * ユーザ情報編集
+	 */
+	public ActionForward editLoginInfo(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		System.out.println(" action authentication !! START");
+
+		//リクエストに格納
+		req.setAttribute("EditFormBean", mf);
+
+		System.out.println("login action authentication !! END");
+		return mapping.findForward(ResultLiterals.actionResult_Success);
+	}
+
+	/*
+	 * ActionFormをDTOにコピー
+	 */
+	private void copyDTO(){
+
+	}
+
+	/*
+	 * DTOをActionFormにコピー
+	 */
+	private void copyActionForm(){
+
+	}
+}

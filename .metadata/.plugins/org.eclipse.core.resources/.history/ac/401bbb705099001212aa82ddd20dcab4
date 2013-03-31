@@ -1,0 +1,25 @@
+package com.urushibata.struts1.vo;
+
+import org.apache.commons.beanutils.BeanUtilsBean2;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class UsersVO extends BeanUtilsBean2{
+	private String userId;
+	private String userName;
+	private String address;
+	private String mail;
+	private String companyName;
+	private String employeeNo;
+	private String userPassword;
+
+	public UserVO(ResultSet res) throws SQLException {
+		this.userId = res.getString("userId");
+		this.userName = res.getString("userName");
+		this.address = res.getString("address");
+		this.mail = res.getString("mail");
+		this.companyName = res.getString("companyName");
+		this.employeeNo = res.getString("employeeNo");
+		this.userPassword = res.getString("userPassword");
+	}
+}

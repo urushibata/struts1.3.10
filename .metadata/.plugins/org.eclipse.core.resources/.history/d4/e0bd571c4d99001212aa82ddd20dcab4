@@ -1,0 +1,9 @@
+package com.urushibata.struts1.vo;
+
+import org.apache.commons.beanutils.BeanUtilsBean2;
+
+public class UsersVO extends BeanUtilsBean2 {
+	private String userId;
+	private String userName;
+
+}

@@ -3,4 +3,21 @@
 <fullyQualifiedTypeName name="org.apache.tomcat.util.http.mapper.MappingData"/>
 <fullyQualifiedTypeName name="com.urushibata.struts1.businessLogic.UserAuthentication"/>
 <fullyQualifiedTypeName name="java.beans.Statement"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.form.LoginFormBean"/>
+<fullyQualifiedTypeName name="org.apache.struts.action.ActionMessage"/>
+<fullyQualifiedTypeName name="org.apache.struts.action.ActionMessages"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.common.Literals"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.common.MassageGroup"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.vo.UsersVO"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.form.MenyFormBean"/>
+<fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.dto.LoginDTO"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.form.MenuFormBean"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.common.ResultLiterals"/>
+<fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.form.EditUserInfoFormBean"/>
+<fullyQualifiedTypeName name="org.apache.catalina.connector.Request"/>
 </qualifiedTypeNameHistroy>

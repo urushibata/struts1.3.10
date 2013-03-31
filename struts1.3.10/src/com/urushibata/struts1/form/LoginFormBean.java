@@ -14,6 +14,7 @@ public class LoginFormBean extends ValidatorForm {
 	public String getUserId(){
 		return userId;
 	}
+
 	public void setUserPassword(String userPassword){
 		this.userPassword = userPassword;
 	}

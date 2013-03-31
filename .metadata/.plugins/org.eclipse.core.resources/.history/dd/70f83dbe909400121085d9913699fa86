@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="/tags/tags-html" prefix="html" %>
+<%@ taglib uri="/tags/tags-bean" prefix="bean" %>
+<html>
+	<head>
+		<link rel="stylesheet" href="<html:rewrite page="/contents/style/common.css"/>" type="text/css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<title>メンテナンス画面</title>
+	</head>
+	<body>
+		<header>
+			<h1>メンテナンス画面</h1>
+			<html:messages id="msg" message="false"  property="correlation">
+				<bean:write name="msg" ignore="true"/>
+			</html:messages>
+		</header>
+		<article>
+			<section>
+				<html:form id="main" target="_self">
+					<div id="section1" class="section">
+					
+					
+					</div>
+				</html:form>
+			</section>
+		</article>
+		
+		<footer>
+		</footer>
+		
+		<script type="text/javascript">
+			j$ = jQuery.noConflict();
+			j$(function() {
+				
+			});
+		</script>
+	</body>
+</html>

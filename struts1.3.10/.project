@@ -75,9 +75,19 @@
 			<locationURI>PARENT-4-PROJECT_LOC/lib/spring-2.5.6/lib/spring-2.5.6.jar</locationURI>
 		</link>
 		<link>
+			<name>WebContent/WEB-INF/lib/standard-1.0.6.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/lib/struts-1.3.10/lib/standard-1.0.6.jar</locationURI>
+		</link>
+		<link>
 			<name>WebContent/WEB-INF/lib/struts-core-1.3.10.jar</name>
 			<type>1</type>
 			<locationURI>PARENT-4-PROJECT_LOC/lib/struts-1.3.10/lib/struts-core-1.3.10.jar</locationURI>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/lib/struts-el-1.3.10.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/lib/struts-1.3.10/lib/struts-el-1.3.10.jar</locationURI>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/struts-extras-1.3.10.jar</name>
@@ -93,6 +103,26 @@
 			<name>WebContent/WEB-INF/lib/struts-tiles-1.3.10.jar</name>
 			<type>1</type>
 			<locationURI>PARENT-4-PROJECT_LOC/lib/struts-1.3.10/lib/struts-tiles-1.3.10.jar</locationURI>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/tags/struts-bean.tld</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/lib/struts-1.3.10/src/taglib/src/main/resources/META-INF/tld/struts-bean.tld</locationURI>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/tags/struts-html.tld</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/lib/struts-1.3.10/src/taglib/src/main/resources/META-INF/tld/struts-html.tld</locationURI>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/tags/struts-logic.tld</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/lib/struts-1.3.10/src/taglib/src/main/resources/META-INF/tld/struts-logic.tld</locationURI>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/tags/struts-nested.tld</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/lib/struts-1.3.10/src/taglib/src/main/resources/META-INF/tld/struts-nested.tld</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

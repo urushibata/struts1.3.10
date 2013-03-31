@@ -1,0 +1,6 @@
+package com.urushibata.struts1.common;
+
+public class Literals {
+	public static final String actionResult_Success = "success";
+	public static final String actionResult_Failure = "failure";
+}

@@ -1,0 +1,56 @@
+package com.urushibata.struts1.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
+import org.apache.struts.actions.MappingDispatchAction;
+import org.springframework.beans.BeanUtils;
+
+import com.urushibata.struts1.common.MassageGroup;
+import com.urushibata.struts1.common.ResultLiterals;
+import com.urushibata.struts1.form.MenuFormBean;
+
+public class MenuAction extends MappingDispatchAction{
+	private EditUserInfoFormBean mf;
+
+	/*
+	 * 表示
+	 */
+	public ActionForward init(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		System.out.println("menu action init !!");
+		return mapping.findForward("success");
+	}
+
+	/*
+	 * ユーザ情報編集
+	 */
+	public ActionForward editUserInfo(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		System.out.println(" menu action editUserInfo !! START");
+
+		BeanUtils.copyProperties(form, mf);
+
+		System.out.println(" menu action editUserInfo !! END");
+		return mapping.findForward(ResultLiterals.actionResult_Success);
+	}
+
+	/*
+	 * ActionFormをDTOにコピー
+	 */
+	private void copyDTO(){
+
+	}
+
+	/*
+	 * DTOをActionFormにコピー
+	 */
+	private void copyActionForm(){
+
+	}
+}

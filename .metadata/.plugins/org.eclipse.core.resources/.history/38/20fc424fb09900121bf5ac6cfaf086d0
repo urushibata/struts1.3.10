@@ -1,0 +1,70 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="/tags/tags-html" prefix="html" %>
+<%@ taglib uri="/tags/tags-bean" prefix="bean" %>
+<html>
+	<head>
+		<link rel="stylesheet" href="<html:rewrite page="/contents/style/common.css"/>" type="text/css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<title>メニュー画面</title>
+	</head>
+	<body>
+		<header>
+			<h1>メニュー画面</h1>
+			<html:messages id="msg" message="false"  property="correlation">
+				<bean:write name="msg" ignore="true"/>
+			</html:messages>
+		</header>
+
+		<article>
+			<section>
+				<p>
+					<label>ようこそ！！</label>
+				</p>
+			</section>
+			<section>
+				<html:form action="" target="_self">
+				<div class="section">
+					<h2 id="section1Label" class="sectionLabel">
+						ユーザ登録情報
+					</h2>
+					<table>
+						<tbody>
+							<tr>
+								<th>名前：</th>
+								<td>${MenuFormBean.userName }</td>
+							</tr>
+							<tr>
+								<th>住所：</th>
+								<td>${MenuFormBean.address }</td>
+							</tr>
+							<tr>
+								<th>メール：</th>
+								<td>${MenuFormBean.mail }</td>
+							</tr>
+							<tr>
+								<th>会社：</th>
+								<td>${MenuFormBean.companyName }</td>
+							</tr>
+							<tr>
+								<th>従業員番号：</th>
+								<td>${MenuFormBean.employeeNo }</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</article>
+
+		<footer>
+		</footer>
+
+		<script type="text/javascript">
+			j$ = jQuery.noConflict();
+			j$(function() {
+				
+			});
+		</script>
+	</body>
+</html>
