@@ -33,7 +33,7 @@
 							<tbody>
 								<tr>
 									<th>名前：</th>
-									<td><bean:write name="MenuFormBean" property="userName" /></td>
+									<td>${MenuFormBean.userName}</td>
 								</tr>
 								<tr>
 									<th>住所：</th>
@@ -54,6 +54,12 @@
 							</tbody>
 						</table>
 					</div>
+					<html:hidden name="MenuFormBean" property="userId"/>
+					<html:hidden name="MenuFormBean" property="userName"/>
+					<html:hidden name="MenuFormBean" property="address"/>
+					<html:hidden name="MenuFormBean" property="mail"/>
+					<html:hidden name="MenuFormBean" property="companyName"/>
+					<html:hidden name="MenuFormBean" property="employeeNo"/>
 					<html:submit property="" value="ユーザ情報変更"/>
 				</html:form>
 			</section>

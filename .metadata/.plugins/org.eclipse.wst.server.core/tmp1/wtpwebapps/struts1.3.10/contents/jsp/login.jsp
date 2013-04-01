@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
-<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
+<%@ taglib uri="/tags/tags-html" prefix="html" %>
+<%@ taglib uri="/tags/tags-bean" prefix="bean" %>
 <html:html>
 	<head>
 		<link rel="stylesheet" href="<html:rewrite page="/contents/style/common.css"/>" type="text/css"/>

@@ -1,4 +1,4 @@
-package com.urushibata.struts1.Service;
+package com.urushibata.struts1.service;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;

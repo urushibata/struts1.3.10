@@ -10,11 +10,11 @@ import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
 import org.apache.struts.actions.MappingDispatchAction;
 
-import com.urushibata.struts1.Service.UserAuthentication;
 import com.urushibata.struts1.common.MassageGroup;
 import com.urushibata.struts1.dto.LoginDTO;
 import com.urushibata.struts1.form.LoginFormBean;
 import com.urushibata.struts1.form.MenuFormBean;
+import com.urushibata.struts1.service.UserAuthentication;
 
 import java.sql.SQLException;
 
@@ -79,6 +79,7 @@ public class LoginAction extends MappingDispatchAction{
 	 */
 	private void copyActionForm(){
 		mf = new MenuFormBean();
+		this.mf.setUserId(this.dto.getUserId());
 		this.mf.setUserName(this.dto.getVO().getUserName());
 		this.mf.setAddress(this.dto.getVO().getAddress());
 		this.mf.setMail(this.dto.getVO().getMail());

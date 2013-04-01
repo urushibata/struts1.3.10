@@ -3,24 +3,24 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="309" key="DIALOG_WIDTH"/>
 		<item value="122" key="DIALOG_Y_ORIGIN"/>
-		<item value="537" key="DIALOG_X_ORIGIN"/>
 		<item value="383" key="DIALOG_HEIGHT"/>
+		<item value="537" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Meiryo UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Meiryo UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="EditUserInfoFormBean" key="selection"/>
+		<item value="&#x09;" key="selection"/>
 		<list key="findhistory">
-			<item value="MenuFormBean"/>
 			<item value="    "/>
+			<item value="MenuFormBean"/>
 		</list>
 		<list key="replacehistory">
-			<item value="EditUserInfoFormBean"/>
 			<item value="&#x09;"/>
+			<item value="EditUserInfoFormBean"/>
 		</list>
 	</section>
 </section>

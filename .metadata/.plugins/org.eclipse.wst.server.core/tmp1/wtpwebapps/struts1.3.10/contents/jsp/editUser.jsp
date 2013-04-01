@@ -5,6 +5,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="<html:rewrite page="/contents/style/common.css"/>" type="text/css"/>
+		<link rel="stylesheet" href="<html:rewrite page="/contents/style/editUserInfo.css"/>" type="text/css"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<title>ユーザ情報編集画面</title>
@@ -28,23 +29,23 @@
 							<tbody>
 								<tr>
 									<th><label for="userName">名前：</label></th>
-									<td><html:text property="userName" styleId="userName"/></td>
+									<td><html:text property="userName" styleId="userName" maxlength="20" /></td>
 								</tr>
 								<tr>
 									<th><label for="address">住所：</label></th>
-									<td><html:text property="address" styleId="address"/></td>
+									<td><html:textarea property="address" styleId="address" cols="40" /></td>
 								</tr>
 								<tr>
 									<th><label for="mail">メール：</label></th>
-									<td><html:text property="mail" styleId="mail"/></td>
+									<td><html:text property="mail" styleId="mail" size="45" maxlength="30" /></td>
 								</tr>
 								<tr>
 									<th><label for="companyName">会社：</label></th>
-									<td><html:text property="companyName" styleId="companyName"/></td>
+									<td><html:text property="companyName" styleId="companyName" size="45" maxlength="100" /></td>
 								</tr>
 								<tr>
 									<th><label for="employeeNo">従業員番号：</label></th>
-									<td><html:text property="employeeNo" styleId="employeeNo"/></td>
+									<td><html:text property="employeeNo" styleId="employeeNo" size="20" maxlength="10" /></td>
 								</tr>
 							</tbody>
 						</table>

@@ -33,7 +33,7 @@
 		<guid isPermaLink="false">http://blog.springsource.org/?p=12771</guid>
 		<description><![CDATA[&#160; Hi reader! My name is Daniel Fern&#225;ndez and I am the author of the Thymeleaf template engine as well as several other open source technologies. I recently helped update the Spring Travel sample application and migrate its view layer to Thymeleaf, and the nice folks at SpringSource have given me the opportunity to write  <a href="http://blog.springsource.org/2013/03/26/bringing-new-life-to-spring-travel-with-thymeleaf/"><em>Read more...</em></a>]]></description>
 		<wfw:commentRss>http://blog.springsource.org/2013/03/26/bringing-new-life-to-spring-travel-with-thymeleaf/feed/</wfw:commentRss>
-		<slash:comments>11</slash:comments>
+		<slash:comments>12</slash:comments>
 		</item>
 		<item>
 		<title>Spring Petclinic is on Github!</title>
