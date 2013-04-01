@@ -15,9 +15,9 @@
 <fullyQualifiedTypeName name="com.urushibata.struts1.form.MenyFormBean"/>
 <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
 <fullyQualifiedTypeName name="com.urushibata.struts1.dto.LoginDTO"/>
-<fullyQualifiedTypeName name="com.urushibata.struts1.form.MenuFormBean"/>
 <fullyQualifiedTypeName name="com.urushibata.struts1.common.ResultLiterals"/>
 <fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
 <fullyQualifiedTypeName name="com.urushibata.struts1.form.EditUserInfoFormBean"/>
 <fullyQualifiedTypeName name="org.apache.catalina.connector.Request"/>
+<fullyQualifiedTypeName name="com.urushibata.struts1.form.MenuFormBean"/>
 </qualifiedTypeNameHistroy>

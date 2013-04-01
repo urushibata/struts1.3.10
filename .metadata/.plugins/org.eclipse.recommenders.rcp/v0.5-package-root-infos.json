@@ -1,15 +1,15 @@
 [
   {
-    "symbolicName": "tomcat-i18n-fr",
+    "symbolicName": "standard-1.0.6",
     "version": {
       "major": -1,
       "minor": -1,
       "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "94435822c7961f288127817e52700933377fb433",
-    "jarFileModificationDate": "2013-01-10T22:54:30+09:00",
-    "location": "C:\\usr\\opp\\apache-tomcat-7.0.35\\lib\\tomcat-i18n-fr.jar",
+    "jarFileFingerprint": "72b2dab3d9723943f6f6839ef84ccc25a087e5fa",
+    "jarFileModificationDate": "2008-06-05T00:48:36+09:00",
+    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\standard-1.0.6.jar",
     "javaRuntime": false
   },
   {
@@ -26,16 +26,16 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "standard-1.0.6",
+    "symbolicName": "tomcat-i18n-fr",
     "version": {
       "major": -1,
       "minor": -1,
       "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "72b2dab3d9723943f6f6839ef84ccc25a087e5fa",
-    "jarFileModificationDate": "2008-06-05T00:48:36+09:00",
-    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\standard-1.0.6.jar",
+    "jarFileFingerprint": "94435822c7961f288127817e52700933377fb433",
+    "jarFileModificationDate": "2013-01-10T22:54:30+09:00",
+    "location": "C:\\usr\\opp\\apache-tomcat-7.0.35\\lib\\tomcat-i18n-fr.jar",
     "javaRuntime": false
   },
   {
@@ -104,19 +104,6 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "servlet-api",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "87bd606eef7d42ff3ec324d198549ccd8ccb56fc",
-    "jarFileModificationDate": "2013-01-10T22:54:30+09:00",
-    "location": "C:\\usr\\opp\\apache-tomcat-7.0.35\\lib\\servlet-api.jar",
-    "javaRuntime": false
-  },
-  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -130,16 +117,16 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "tomcat-dbcp",
+    "symbolicName": "servlet-api",
     "version": {
       "major": -1,
       "minor": -1,
       "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "0acc9c41c63ac2c5a8ef50d0baca4c2fc9a75f60",
+    "jarFileFingerprint": "87bd606eef7d42ff3ec324d198549ccd8ccb56fc",
     "jarFileModificationDate": "2013-01-10T22:54:30+09:00",
-    "location": "C:\\usr\\opp\\apache-tomcat-7.0.35\\lib\\tomcat-dbcp.jar",
+    "location": "C:\\usr\\opp\\apache-tomcat-7.0.35\\lib\\servlet-api.jar",
     "javaRuntime": false
   },
   {
@@ -153,6 +140,19 @@
     "jarFileFingerprint": "a744b3f5beb7c9473603765dc3f2224013f27636",
     "jarFileModificationDate": "2013-01-10T22:54:30+09:00",
     "location": "C:\\usr\\opp\\apache-tomcat-7.0.35\\lib\\catalina-ant.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "tomcat-dbcp",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0acc9c41c63ac2c5a8ef50d0baca4c2fc9a75f60",
+    "jarFileModificationDate": "2013-01-10T22:54:30+09:00",
+    "location": "C:\\usr\\opp\\apache-tomcat-7.0.35\\lib\\tomcat-dbcp.jar",
     "javaRuntime": false
   },
   {
@@ -325,17 +325,17 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "org.apache.struts.struts-extras",
+    "symbolicName": "jre",
     "version": {
       "major": 1,
-      "minor": 3,
-      "micro": 10,
+      "minor": 0,
+      "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "bbc4f2b320b7e2479f4fa42ff79006eb413e6c51",
-    "jarFileModificationDate": "2008-11-29T17:49:44+09:00",
-    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\struts-extras-1.3.10.jar",
-    "javaRuntime": false
+    "jarFileFingerprint": "b2368611d229333a7f78599deba9117f11118731",
+    "jarFileModificationDate": "2013-02-09T22:52:36.127+09:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\ext\\access-bridge-64.jar",
+    "javaRuntime": true
   },
   {
     "symbolicName": "jasper",
@@ -351,17 +351,17 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "jre",
+    "symbolicName": "org.apache.struts.struts-extras",
     "version": {
       "major": 1,
-      "minor": 0,
-      "micro": 0,
+      "minor": 3,
+      "micro": 10,
       "qualifier": ""
     },
-    "jarFileFingerprint": "b2368611d229333a7f78599deba9117f11118731",
-    "jarFileModificationDate": "2013-02-09T22:52:36.127+09:00",
-    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\ext\\access-bridge-64.jar",
-    "javaRuntime": true
+    "jarFileFingerprint": "bbc4f2b320b7e2479f4fa42ff79006eb413e6c51",
+    "jarFileModificationDate": "2008-11-29T17:49:44+09:00",
+    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\struts-extras-1.3.10.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -442,19 +442,6 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "0219ab134947982060a81a181a95b4d394f2cca7",
-    "jarFileModificationDate": "2013-02-09T22:52:36.140+09:00",
-    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\ext\\dnsns.jar",
-    "javaRuntime": true
-  },
-  {
     "symbolicName": "org.apache.struts.struts-taglib",
     "version": {
       "major": 1,
@@ -468,16 +455,29 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "commons-digester-1.8",
+    "symbolicName": "jre",
     "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "dc6a73fdbd1fa3f0944e8497c6c872fa21dca37e",
-    "jarFileModificationDate": "2008-03-13T21:15:26+09:00",
-    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\commons-digester-1.8.jar",
+    "jarFileFingerprint": "0219ab134947982060a81a181a95b4d394f2cca7",
+    "jarFileModificationDate": "2013-02-09T22:52:36.140+09:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.struts.struts-el",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 10,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dcd9a743c6225e2330904cba1bf9b2516754dc13",
+    "jarFileModificationDate": "2008-11-29T17:48:28+09:00",
+    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\struts-el-1.3.10.jar",
     "javaRuntime": false
   },
   {
@@ -494,16 +494,16 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "org.apache.struts.struts-el",
+    "symbolicName": "commons-digester-1.8",
     "version": {
-      "major": 1,
-      "minor": 3,
-      "micro": 10,
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "dcd9a743c6225e2330904cba1bf9b2516754dc13",
-    "jarFileModificationDate": "2008-11-29T17:48:28+09:00",
-    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\struts-el-1.3.10.jar",
+    "jarFileFingerprint": "dc6a73fdbd1fa3f0944e8497c6c872fa21dca37e",
+    "jarFileModificationDate": "2008-03-13T21:15:26+09:00",
+    "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\commons-digester-1.8.jar",
     "javaRuntime": false
   },
   {
@@ -546,32 +546,6 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "f831655c50b92c41e366442d09511ea84270c45e",
-    "jarFileModificationDate": "2013-02-09T22:52:36.326+09:00",
-    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\jce.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "99a4f4c8ee86316dd78933705a598fad2c95c808",
-    "jarFileModificationDate": "2013-02-09T22:52:36.420+09:00",
-    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\resources.jar",
-    "javaRuntime": true
-  },
-  {
     "symbolicName": "org.apache.struts.struts-tiles",
     "version": {
       "major": 1,
@@ -592,9 +566,22 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "8fc17c369607d24b4f6f2bac42e4fcc787bded08",
-    "jarFileModificationDate": "2013-02-09T22:52:39.532+09:00",
-    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\charsets.jar",
+    "jarFileFingerprint": "99a4f4c8ee86316dd78933705a598fad2c95c808",
+    "jarFileModificationDate": "2013-02-09T22:52:36.420+09:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f831655c50b92c41e366442d09511ea84270c45e",
+    "jarFileModificationDate": "2013-02-09T22:52:36.326+09:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\jce.jar",
     "javaRuntime": true
   },
   {
@@ -609,5 +596,18 @@
     "jarFileModificationDate": "2008-06-04T23:41:24+09:00",
     "location": "C:\\usr\\lib\\struts-1.3.10\\lib\\commons-chain-1.2.jar",
     "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8fc17c369607d24b4f6f2bac42e4fcc787bded08",
+    "jarFileModificationDate": "2013-02-09T22:52:39.532+09:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_13\\jre\\lib\\charsets.jar",
+    "javaRuntime": true
   }
 ]
