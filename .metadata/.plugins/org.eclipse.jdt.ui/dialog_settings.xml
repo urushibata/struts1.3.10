@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="C:\usr\lib\struts-1.3.10\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="false" key="SortMembers.sort_all"/>
 	<item value="JavaSE-1.7" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
@@ -25,9 +26,13 @@
 		<item value="false" key="expanded3"/>
 		<item value="false" key="expanded2"/>
 		<item value="false" key="expanded1"/>
-		<item value="false" key="expanded7"/>
 		<item value="false" key="expanded6"/>
 		<item value="false" key="expanded5"/>
+		<item value="true" key="expanded0"/>
+	</section>
+	<section name="JavaBuildConfigurationBlock">
+		<item value="false" key="expanded2"/>
+		<item value="false" key="expanded1"/>
 		<item value="true" key="expanded0"/>
 	</section>
 	<section name="NewPackageWizardPage">
@@ -62,10 +67,10 @@
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="*" key="patterns"/>
-		<item value="false" key="updateQualifiedNames"/>
-		<item value="false" key="renameSubpackages"/>
+		<item value="true" key="updateQualifiedNames"/>
+		<item value="true" key="renameSubpackages"/>
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
-		<item value="false" key="updateTextualMatches"/>
+		<item value="true" key="updateTextualMatches"/>
 		<item value="false" key="updateSimilarElements"/>
 	</section>
 </section>

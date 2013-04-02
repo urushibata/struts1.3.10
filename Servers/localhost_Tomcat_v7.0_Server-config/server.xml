@@ -63,7 +63,7 @@
 		 APR (HTTP/AJP) Connector: /docs/apr.html
 		 Define a non-SSL HTTP/1.1 Connector on port 8080
 	-->
-	<Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+	<Connector connectionTimeout="20000" port="8081" protocol="HTTP/1.1" redirectPort="8443"/>
 	<!-- A "Connector" using the shared thread pool-->
 	<!--
 	<Connector executor="tomcatThreadPool"
@@ -126,6 +126,7 @@
 					Note: The pattern used is equivalent to using pattern="common" -->
 				<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
+				
 				<Context docBase="struts1.3.10" path="/struts1.3.10" reloadable="true" source="org.eclipse.jst.jee.server:struts1.3.10">
 					<Resource
 						name="jdbc/myoracle"
@@ -133,7 +134,7 @@
 						type="javax.sql.DataSource"
 						factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
 						driverClassName="oracle.jdbc.driver.OracleDriver"
-						url="jdbc:oracle:thin:@127.0.0.1:1521/XE"
+						url="jdbc:oracle:thin:@127.0.0.1:1521:ORCL"
 						username="test"
 						password="test"
 					/>

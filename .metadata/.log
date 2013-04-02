@@ -4798,3 +4798,153 @@ java.lang.IllegalArgumentException: Attempted to beginRule: P/struts1.3.10, does
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+!SESSION 2013-04-02 11:53:12.515 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-04-02 11:53:33.984
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2013-04-02 13:13:45.218 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 4 0 2013-04-02 13:16:01.468
+!MESSAGE 未処理のイベント・ループ例外
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4263)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.custom.StyledText.setCaretOffset(StyledText.java:8434)
+	at net.sourceforge.vrapper.eclipse.platform.EclipseCursorAndSelection.setSelection(EclipseCursorAndSelection.java:172)
+	at net.sourceforge.vrapper.vim.DefaultEditorAdaptor.setSelection(DefaultEditorAdaptor.java:317)
+	at net.sourceforge.vrapper.vim.commands.VisualMotionCommand.extendSelection(VisualMotionCommand.java:56)
+	at net.sourceforge.vrapper.vim.commands.AbstractVisualMotionCommand.execute(AbstractVisualMotionCommand.java:22)
+	at net.sourceforge.vrapper.vim.commands.CountAwareCommand.execute(CountAwareCommand.java:16)
+	at net.sourceforge.vrapper.vim.modes.CommandBasedMode.executeCommand(CommandBasedMode.java:222)
+	at net.sourceforge.vrapper.vim.modes.CommandBasedMode.handleKey(CommandBasedMode.java:256)
+	at net.sourceforge.vrapper.vim.DefaultEditorAdaptor.handleKey0(DefaultEditorAdaptor.java:457)
+	at net.sourceforge.vrapper.vim.DefaultEditorAdaptor.handleKeyOffRecord(DefaultEditorAdaptor.java:285)
+	at net.sourceforge.vrapper.vim.DefaultEditorAdaptor.handleKey(DefaultEditorAdaptor.java:281)
+	at net.sourceforge.vrapper.eclipse.interceptor.VimInputInterceptorFactory$VimInputInterceptor.verifyKey(VimInputInterceptorFactory.java:118)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:491)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:65)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5936)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5635)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2531)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+
+!ENTRY net.sourceforge.vrapper.eclipse 4 0 2013-04-02 13:16:02.484
+!MESSAGE current state was null - this shouldn't have happened!
+
+!ENTRY org.eclipse.jdt.launching 4 150 2013-04-02 13:32:20.562
+!MESSAGE クラスパスによって参照されているアーカイブ: C:/usr/opp/apache-tomcat-7.0.35/bin/bootstrap.jar は存在しません。
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2013-04-02 13:37:10.921
+!MESSAGE localhost_Tomcat_v7.0_Server で必要なポート 8080 はすでに使用中です。サーバーはすでに別のプロセスで稼働中であるか、システム・プロセスがそのポートを使用中である可能性があります。このサーバーを始動するには、他のプロセスを停止するか、ポート番号を変更する必要があります。
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2013-04-02 13:38:12.843
+!MESSAGE localhost_Tomcat_v7.0_Server で必要なポート 8080 はすでに使用中です。サーバーはすでに別のプロセスで稼働中であるか、システム・プロセスがそのポートを使用中である可能性があります。このサーバーを始動するには、他のプロセスを停止するか、ポート番号を変更する必要があります。
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2013-04-02 13:49:29.546
+!MESSAGE localhost_Tomcat_v7.0_Server で必要なポート 8080 はすでに使用中です。サーバーはすでに別のプロセスで稼働中であるか、システム・プロセスがそのポートを使用中である可能性があります。このサーバーを始動するには、他のプロセスを停止するか、ポート番号を変更する必要があります。
+!SESSION 2013-04-02 14:30:55.049 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.server.core 4 0 2013-04-02 14:44:40.471
+!MESSAGE D:/usr/work/java-project/project-001/struts1.3.10/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/struts1.3.10/WEB-INF/lib/oro-2.0.8.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SESSION 2013-04-02 15:02:07.409 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE 公開が複数のエラーで失敗しました
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\antlr-2.7.2.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\commons-beanutils-1.8.0.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\commons-chain-1.2.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\commons-digester-1.8.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\commons-fileupload-1.1.1.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\commons-io-1.1.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\commons-logging-1.0.4.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\commons-validator-1.3.1.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\jstl-1.0.2.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\ojdbc14.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\struts-core-1.3.10.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\struts-el-1.3.10.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\struts-extras-1.3.10.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\struts-taglib-1.3.10.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2013-04-02 15:16:20.893
+!MESSAGE D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10\WEB-INF\lib\struts-tiles-1.3.10.jar を削除できませんでした。他のプロセスによりロックされている可能性があります。
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2013-04-02 16:14:12.534
+!MESSAGE localhost_Tomcat_v7.0_Server で必要な幾つかのポート (8005, 8081, 8009) がすでに使用中です。サーバーはすでに別のプロセスで稼働中であるか、システム・プロセスがそのポートを使用中である可能性があります。このサーバーを始動するには、他のプロセスを停止するか、ポート番号を変更する必要があります。

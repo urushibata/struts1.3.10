@@ -1,0 +1,65 @@
+package com.urushibata.struts1.action;
+
+import java.lang.reflect.InvocationTargetException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.catalina.connector.Request;
+import org.apache.commons.beanutils.BeanUtils;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
+import org.apache.struts.actions.MappingDispatchAction;
+
+import com.urushibata.struts1.common.MassageGroup;
+import com.urushibata.struts1.common.ResultLiterals;
+import com.urushibata.struts1.form.EditUserInfoFormBean;
+import com.urushibata.struts1.form.MenuFormBean;
+
+public class MenuAction extends MappingDispatchAction{
+	private MenuFormBean mf;
+	private EditUserInfoFormBean euif;
+
+	/*
+	 * 表示
+	 */
+	public ActionForward init(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res) {
+		System.out.println("menu action init !!");
+		return mapping.findForward("success");
+	}
+
+	/*
+	 * ユーザ情報編集
+	 */
+	public ActionForward editUserInfo(ActionMapping mapping, ActionForm form,
+													HttpServletRequest req, HttpServletResponse res)
+													throws IllegalAccessException, InvocationTargetException {
+		System.out.println(" menu action editUserInfo !! START");
+
+		mf = (MenuFormBean)form;
+		euif = new EditUserInfoFormBean();
+		BeanUtils.copyProperties(mf, euif);
+		req.setAttribute("EditUserInfoFormBean", euif);
+
+		System.out.println(" menu action editUserInfo !! END");
+		return mapping.findForward(ResultLiterals.actionResult_Success);
+	}
+
+	/*
+	 * ActionFormをDTOにコピー
+	 */
+	private void copyDTO(){
+
+	}
+
+	/*
+	 * DTOをActionFormにコピー
+	 */
+	private void copyActionForm(){
+
+	}
+}

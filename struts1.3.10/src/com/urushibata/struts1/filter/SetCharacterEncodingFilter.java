@@ -20,7 +20,10 @@ public class SetCharacterEncodingFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 						throws IOException, ServletException{
 
+		System.out.print("SetCaracterEncodingFilter START\n");
 		request.setCharacterEncoding(filterConfig.getInitParameter("encoding"));
+
+		System.out.print("SetCaracterEncodingFilter END\n");
 		chain.doFilter(request,response);
 	}
 

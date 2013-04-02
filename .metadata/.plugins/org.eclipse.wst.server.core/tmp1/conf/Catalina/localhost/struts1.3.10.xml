@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context docBase="C:\usr\work\javaProject\javaApp-003-Struts1\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10" path="/struts1.3.10" reloadable="true" source="org.eclipse.jst.jee.server:struts1.3.10">
-					<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" name="jdbc/myoracle" password="test" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521/XE" username="test"/>
+<Context docBase="D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\struts1.3.10" path="/struts1.3.10" reloadable="true" source="org.eclipse.jst.jee.server:struts1.3.10">
+					<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" name="jdbc/myoracle" password="test" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:ORCL" username="test"/>
 				</Context>

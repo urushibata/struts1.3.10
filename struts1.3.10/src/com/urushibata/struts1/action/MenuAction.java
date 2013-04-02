@@ -1,16 +1,18 @@
 package com.urushibata.struts1.action;
 
+import java.lang.reflect.InvocationTargetException;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.catalina.connector.Request;
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
 import org.apache.struts.actions.MappingDispatchAction;
-import org.springframework.beans.BeanUtils;
 
 import com.urushibata.struts1.common.MassageGroup;
 import com.urushibata.struts1.common.ResultLiterals;
@@ -34,12 +36,13 @@ public class MenuAction extends MappingDispatchAction{
 	 * ユーザ情報編集
 	 */
 	public ActionForward editUserInfo(ActionMapping mapping, ActionForm form,
-													HttpServletRequest req, HttpServletResponse res) {
+													HttpServletRequest req, HttpServletResponse res)
+													throws IllegalAccessException, InvocationTargetException {
 		System.out.println(" menu action editUserInfo !! START");
 
 		mf = (MenuFormBean)form;
 		euif = new EditUserInfoFormBean();
-		BeanUtils.copyProperties(mf, euif);
+		BeanUtils.copyProperties(euif, mf);
 		req.setAttribute("EditUserInfoFormBean", euif);
 
 		System.out.println(" menu action editUserInfo !! END");

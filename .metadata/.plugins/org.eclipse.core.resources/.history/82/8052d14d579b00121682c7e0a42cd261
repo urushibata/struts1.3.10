@@ -1,0 +1,70 @@
+package com.urushibata.struts1.Service;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Connection;
+
+import com.urushibata.struts1.common.ResultLiterals;
+import com.urushibata.struts1.dto.LoginDTO;
+import com.urushibata.struts1.vo.UsersVO;
+
+/*
+ * ユーザ認証クラス
+ */
+public class UserAuthentication {
+	private LoginDTO dto;
+	/*
+	 * コンストラクタ
+	 */
+	public UserAuthentication(){}
+	public UserAuthentication(LoginDTO argdto){
+		dto = argdto;
+	}
+
+	/*
+	 * ユーザ認証
+	 */
+	public String authentication() throws SQLException{
+		System.out.println("authentication businessLogic START");
+
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rest = null;
+		String result = "";
+		UsersVO vo;
+
+		String userId = dto.getUserId();
+		String userPassword = dto.getUserPassword();
+		String query = "select * from users where userId ='" + userId + "' and userpassword = '" + userPassword + "'";
+		System.out.println("execute SQL Query :" + query);
+
+		try{
+			Context initContext = new InitialContext();
+			Context envContext  = (Context)initContext.lookup("java:/comp/env");
+			DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle");
+			conn = ds.getConnection();
+
+			stmt = conn.createStatement();
+			rest = stmt.executeQuery(query);
+
+		}catch(NamingException ex){
+			result = ResultLiterals.actionResult_Failure;
+		}
+
+		if(rest.next()){
+			vo = new UsersVO(rest);
+			dto.setVO(vo);
+			result =ResultLiterals.actionResult_Success;
+		}else{
+			result = ResultLiterals.actionResult_Failure;
+		}
+
+		System.out.println("authentication businessLogic END");
+		return result;
+	}
+}

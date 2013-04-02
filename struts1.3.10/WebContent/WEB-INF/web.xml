@@ -45,7 +45,7 @@
 
 	<!-- DB resorce -->
 	<resource-ref>
-		<description>OracleXE Datasource</description>
+		<description>Oracle10g Datasource</description>
 		<res-ref-name>jdbc/myoracle</res-ref-name>
 		<res-type>javax.sql.DataSource</res-type>
 		<res-auth>Container</res-auth>

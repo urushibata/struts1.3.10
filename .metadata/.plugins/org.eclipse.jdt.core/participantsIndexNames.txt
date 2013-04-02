@@ -1,9 +1,11 @@
 INDEX VERSION 1.126
-C:\usr\work\javaProject\javaApp-003-Struts1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2164479052.index
-\struts1.3.10\src
-C:\usr\work\javaProject\javaApp-003-Struts1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\392500803.index
-\struts1.3.10\src
 C:\usr\work\javaProject\javaApp-003-Struts1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1248369994.index
 \struts1.3.10\src
+C:\usr\work\javaProject\javaApp-003-Struts1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2164479052.index
+\struts1.3.10\src
 C:\usr\work\javaProject\javaApp-003-Struts1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2207500327.index
+\struts1.3.10\src
+D:\usr\work\java-project\project-001\struts1.3.10\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\392500803.index
+\struts1.3.10\src
+C:\usr\work\javaProject\javaApp-003-Struts1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\392500803.index
 \struts1.3.10\src

@@ -4,11 +4,20 @@ import org.apache.struts.validator.ValidatorForm;
 
 public class EditUserInfoFormBean extends ValidatorForm {
 	private static final long serialVersionUID = 1L;
+	private String userId;
 	private String userName;
 	private String address;
 	private String mail;
 	private String companyName;
 	private String employeeNo;
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 
 	public void setUserName(String userName){
 		this.userName = userName;
