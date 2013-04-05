@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.urushibata.struts1.dao;
+
+/**
+ * @author urushibata
+ *
+ */
+public abstract class DAOFactory {
+
+}

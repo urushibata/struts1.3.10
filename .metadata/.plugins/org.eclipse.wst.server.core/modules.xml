@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
-  <module moduleId="org.eclipse.jst.jee.server:struts1.3.10" serverId="ローカル・ホスト の Tomcat v7.0 サーバー"/>
+  <module moduleId="org.eclipse.jst.jee.server:struts1.3.10" serverId="localhost_Tomcat_v7.0_Server"/>
 </modules>

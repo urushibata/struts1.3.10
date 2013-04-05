@@ -1,0 +1,5 @@
+package com.urushibata.struts1.dao;
+
+public abstract class DAOProduct {
+
+}

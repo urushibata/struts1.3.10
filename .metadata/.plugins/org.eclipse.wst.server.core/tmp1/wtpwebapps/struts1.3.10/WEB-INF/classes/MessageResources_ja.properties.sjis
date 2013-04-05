@@ -3,7 +3,12 @@ errors.prefix=<div style="color: red" >
 errors.suffix=</div><br />
 errors.footer=</div>
 
+####### バリデーション #######
 errors.required={0}は入力必須です。
+
+
+####### 相関チェック #######
+errors.E00010={0}、または、{1}が違います。
 
 logonForm.userId=ＩＤ
 logonForm.userPassword=パスワード

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.urushibata.struts1.dao;
+
+import java.sql.Connection;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+/**
+ * @author urushibata
+ *
+ */
+public abstract class DAOFactory {
+	
+	public void create(){}
+}

@@ -12,11 +12,14 @@ import org.apache.struts.action.ActionMessages;
 import org.apache.struts.actions.MappingDispatchAction;
 
 import com.urushibata.struts1.common.MassageGroup;
+import com.urushibata.struts1.common.ResultLiterals;
 import com.urushibata.struts1.dto.LoginDTO;
+import com.urushibata.struts1.exception.CoreException;
 import com.urushibata.struts1.form.LoginFormBean;
 import com.urushibata.struts1.form.MenuFormBean;
 import com.urushibata.struts1.service.UserAuthentication;
 
+import java.io.FileNotFoundException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 
@@ -41,8 +44,7 @@ public class LoginAction extends MappingDispatchAction{
 												HttpServletRequest req, HttpServletResponse res)
 										throws SQLException, IllegalAccessException,
 												InvocationTargetException {
-		System.out.println("loginAction authentication !! START");
-		String result ="";
+		System.out.println("loginAction authentication!! START");
 		ActionMessages ams = new ActionMessages();
 		ActionMessage msg;
 
@@ -51,13 +53,16 @@ public class LoginAction extends MappingDispatchAction{
 		dto = new LoginDTO();
 		copyDTO();
 
-		//ユーザ認証
-		com.urushibata.struts1.service.UserAuthentication ut = new UserAuthentication(dto);
-		result = ut.authentication();
-		if(result == "failure"){
-			msg = new ActionMessage("ＩＤまたはパスワードが違います。");
+		//ＩＤ・パスワード認証
+		UserAuthentication ut = new UserAuthentication(dto);
+		try{
+			ut.authentication();
+		}catch(CoreException e){
+			msg = new ActionMessage(e.getErrID(), e.getErrMessage());
 			ams.add(MassageGroup.CORRELATION, msg);
 			super.saveErrors(req, ams);
+
+			return mapping.findForward(ResultLiterals.actionResult_Failure);
 		}
 
 		//ActionFormにユーザ情報をコピーする。
@@ -66,8 +71,8 @@ public class LoginAction extends MappingDispatchAction{
 		//リクエストに格納
 		req.setAttribute("MenuFormBean", mf);
 
-		System.out.println("loginAction authentication !! END");
-		return mapping.findForward(result);
+		System.out.println("loginAction authentication!! END");
+		return mapping.findForward(ResultLiterals.actionResult_Success);
 	}
 
 	/*
@@ -81,7 +86,7 @@ public class LoginAction extends MappingDispatchAction{
 	 * DTOをActionFormにコピー
 	 */
 	private void copyActionForm() throws IllegalAccessException, InvocationTargetException{
-		mf = new MenuFormBean();
+		this.mf = new MenuFormBean();
 
 		//TODO なぜかコピーできない。Beanがネストしているから？
 		//BeanUtils.copyProperties(this.mf, this.dto.getVO());

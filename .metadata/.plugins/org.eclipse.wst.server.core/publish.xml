@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <publish-info>
-  <server id="ローカル・ホスト の Tomcat v7.0 サーバー" path="publish1.dat"/>
+  <server id="localhost_Tomcat_v7.0_Server" path="publish1.dat"/>
 </publish-info>

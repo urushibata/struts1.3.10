@@ -1,0 +1,5 @@
+package com.urushibata.struts1.common;
+
+public class AppConsts {
+	public static final  String LOGGING_PROPERTIES = "log.properties";
+}

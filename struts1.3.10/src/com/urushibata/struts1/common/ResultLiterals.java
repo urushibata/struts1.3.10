@@ -2,5 +2,6 @@ package com.urushibata.struts1.common;
 
 public class ResultLiterals {
 	public static final String actionResult_Success = "success";
+	public static final String actionResult_Fault = "fault";
 	public static final String actionResult_Failure = "failure";
 }

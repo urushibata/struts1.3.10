@@ -1,0 +1,44 @@
+package com.urushibata.struts1.exception;
+
+public class CoreException extends RuntimeException {
+	private String errID = null;
+	private String[] errMessage = null;
+
+	private static final long serialVersionUID = 2494908679917600708L;
+
+	public CoreException() {
+		super();
+	}
+
+	public CoreException(String errID, String... errMessage) {
+		super();
+		this.errID = errID;
+		this.errMessage = errMessage;
+	}
+
+	public CoreException(Throwable cause, String errID, String... errMessage) {
+		super(cause);
+		this.errID = errID;
+		this.errMessage = errMessage;
+	}
+
+	public CoreException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	public CoreException(String message) {
+		super(message);
+	}
+
+	public CoreException(Throwable cause) {
+		super(cause);
+	}
+
+	public String getErrID() {
+		return errID;
+	}
+
+	public String[] getErrMessage() {
+		return errMessage;
+	}
+}

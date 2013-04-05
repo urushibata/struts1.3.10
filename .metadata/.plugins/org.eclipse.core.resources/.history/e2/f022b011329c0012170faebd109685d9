@@ -1,0 +1,5 @@
+package com.urushibata.struts1.exception;
+
+public class CoreException extends RuntimeException {
+
+}

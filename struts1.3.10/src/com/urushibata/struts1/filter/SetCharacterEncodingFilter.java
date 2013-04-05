@@ -9,7 +9,11 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-//文字コード設定クラス。
+
+/**
+ * 文字コード設定フィルター
+ * @author urushibata
+ */
 public class SetCharacterEncodingFilter implements Filter {
 	private FilterConfig filterConfig;
 

@@ -10,11 +10,15 @@
 	<body>
 		<header>
 			<H1>Hello !! Struts1.3.10 Running ...</H1>
-			<html:messages id="msg" message="false"  property="correlation">
-				<bean:write name="msg" ignore="true"/>
-			</html:messages>
 		</header>
 		<article>
+			<section>
+				<html:messages id="msg" message="false" property="correlation">
+					<div class="errArea">
+						<bean:write name="msg" ignore="true"/>
+					</div>
+				</html:messages>
+			</section>
 			<section>
 				<html:form action="/Auth" target="_self" >
 					<table>

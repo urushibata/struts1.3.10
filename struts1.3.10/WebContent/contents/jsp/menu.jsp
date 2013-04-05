@@ -12,12 +12,16 @@
 	<body>
 		<header>
 			<h1>メニュー画面</h1>
-			<html:messages id="msg" message="false"  property="correlation">
-				<bean:write name="msg" ignore="true"/>
-			</html:messages>
 		</header>
 
 		<article>
+			<section>
+				<html:messages id="msg" message="false" property="correlation">
+					<div class="errArea">
+						<bean:write name="msg" ignore="true"/>
+					</div>
+				</html:messages>
+			</section>
 			<section>
 				<p>
 					<label>ようこそ！！${MenuFormBean.userName }さん</label>

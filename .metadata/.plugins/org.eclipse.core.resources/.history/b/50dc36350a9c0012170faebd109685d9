@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Tomcatのデータソース設定。
+Tomcatのデフォルトcontext.xmlよりこちらの定義が有効になる。
+アプリでResource使用する場合、WEB-INF/web.xmlでも参照定義が必要。
+-->
+<!--
+【Context】
+docBase=コンテキスト名
+path=コンテキストパス
+reloadable=内容変更時にTomcatを自動で再ロードする　※trueはパフォーマンス低下
+debug=0固定
+ -->
+<Context docBase="struts1.3.10"
+		path="/struts1.3.10"
+		source="org.eclipse.jst.jee.server:struts1.3.10"
+		reloadable="true"
+		debug="0">
+
+	<!--
+	【Resource】
+	name=データソース名
+	auth="Container"
+	type="javax.sql.DataSource"
+	username=DBアクセスユーザ
+	password=DBアクセスパスワード
+	driverClassName="com.mysql.jdbc.Driver"
+	url="jdbc:mysql://サーバアドレス:3306/DB名"
+	maxActive="10"
+	maxWait="5000"
+	maxIdle="2"
+	validationQuery="SELECT 1"
+	testOnBorrow="true"
+	-->
+<!--
+	<Resource
+		name="jdbc/localDB"
+		   auth="Container"
+		   type="javax.sql.DataSource"
+		   username="test"
+		   password="test"
+		   driverClassName="oracle.jdbc.OracleDriver"
+		   url="jdbc:oracle:thin:@localhost:1521:XE"
+		   maxActive="4"
+		   maxWait="5000"
+		   maxIdle="2"
+		   />
+-->
+	<Resource
+		name="jdbc/localDB"
+		auth="Container"
+		type="javax.sql.DataSource"
+		username="test"
+		password="test"
+		driverClassName="org.apache.derby.jdbc.ClientDriver"
+		url="jdbc:derby://localhost:1527/testDB"
+		maxActive="4"
+		maxWait="5000"
+		maxIdle="2"
+		/>
+</Context>

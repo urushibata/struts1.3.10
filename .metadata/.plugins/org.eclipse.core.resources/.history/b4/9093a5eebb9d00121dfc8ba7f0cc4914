@@ -1,0 +1,13 @@
+handlers=java.util.logging.ConsoleHandler, java.util.logging.FileHandler
+.level=FINEST
+
+#FINEST | FINER | FINE | CONFIG | INFO | WARNING | SEVERE
+java.util.logging.ConsoleHandler.level=INFO
+java.util.logging.ConsoleHandler.formatter=java.util.logging.SimpleFormatter
+
+java.util.logging.FileHandler.level=FINEST
+java.util.logging.FileHandler.pattern=Struts1.3.10Logging%u.log
+java.util.logging.FileHandler.formatter=java.util.logging.SimpleFormatter
+java.util.logging.FileHandler.append=true
+java.util.logging.FileHandler.append=10
+java.util.logging.FileHandler.limit=10000

@@ -5,6 +5,12 @@ header{
 	color: white;
 }
 
+.errArea{
+	background-color: #ffff8e;
+	border: solid 1px #FF7575;
+	padding: 5px;
+}
+
 #main{
 
 }

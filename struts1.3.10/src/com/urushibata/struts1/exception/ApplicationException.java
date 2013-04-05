@@ -1,0 +1,29 @@
+package com.urushibata.struts1.exception;
+
+public class ApplicationException extends CoreException {
+	private static final long serialVersionUID = 2641355849787109868L;
+
+	public ApplicationException() {
+		super();
+	}
+
+	public ApplicationException(String errID, String... errMessage) {
+		super(errID, errMessage);
+	}
+
+	public ApplicationException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	public ApplicationException(String message) {
+		super(message);
+	}
+
+	public ApplicationException(Throwable cause, String errID, String... errMessage) {
+		super(cause, errID, errMessage);
+	}
+
+	public ApplicationException(Throwable cause) {
+		super(cause);
+	}
+}

@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package com.urushibata.struts1.dao;
+
+import java.sql.Connection;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+import com.urushibata.struts1.common.AppConsts;
+
+/**
+ * @author urushibata
+ *
+ */
+public abstract class DAOFactory {
+	private DataSource datasource;
+	
+	public DAOFactory(){
+		try {
+			InitialContext initialContext = new InitialContext();
+			this.datasource = (DataSource) initialContext.lookup(AppConsts.DATASOURCE_DB_NAME);
+			Connection conn = this.datasource.getConnection();
+
+			stmt = conn.createStatement();
+			rest = stmt.executeQuery(query);
+
+		} catch (NamingException e) {
+
+		}
+	}
+}
