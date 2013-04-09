@@ -1,0 +1,50 @@
+package com.urushibata.struts1.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+import com.urushibata.struts1.common.AppConsts;
+import com.urushibata.struts1.vo.UsersVO;
+
+public abstract class DAOProduct{
+	private DataSource datasource;
+	private Connection conn;
+	private String ID;
+	
+	/*
+	 * コンストラクタ
+	 * DB接続
+	 */
+	public DAOProduct(){
+		try{
+			InitialContext initialContext = new InitialContext();
+			this.datasource = (DataSource) initialContext.lookup(AppConsts.DATASOURCE_DB_NAME);
+			this.setConn(this.datasource.getConnection());
+		}catch(NamingException | SQLException e) {
+
+		}
+	}
+
+	/**
+	 * @return Connection
+	 */
+	public Connection getConn() {
+		return this.conn;
+	}
+
+	/**
+	 * @param conn セットする conn
+	 */
+	public void setConn(Connection conn) {
+		this.conn = conn;
+	}
+
+	protected abstract UsersVO select(String... args);
+	protected abstract UsersVO update(String... args);
+	protected abstract UsersVO delete(String... args);
+	protected abstract UsersVO insert(String... args);
+}

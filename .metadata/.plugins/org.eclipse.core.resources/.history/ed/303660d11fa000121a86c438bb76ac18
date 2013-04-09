@@ -1,0 +1,19 @@
+package com.urushibata.struts1.dao;
+
+/**
+ * @author urushibata
+ * DAOFactoryクラス
+ */
+public abstract class DAOFactory {
+	
+	public static DAOProduct createDAO(String daoName){
+		DAOProduct dao = null;
+		try{
+			dao = (DAOProduct)Class.forName(daoName).newInstance();
+		}catch(exception e){
+			
+		}
+		
+		return dao;
+	}
+}

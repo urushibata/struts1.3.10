@@ -1,20 +1,47 @@
 package com.urushibata.struts1.dao;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
 import com.urushibata.struts1.common.AppConsts;
+import com.urushibata.struts1.vo.UsersVO;
 
 public abstract class DAOProduct{
 	private DataSource datasource;
-	try{
-		InitialContext initialContext = new InitialContext();
-		this.datasource = (DataSource) initialContext.lookup(AppConsts.DATASOURCE_DB_NAME);
-		Connection conn = this.datasource.getConnection();
-	}catch(NamingException e) {
+	private Connection conn;
+	private String id;
 
+	/*
+	 * コンストラクタ
+	 * DB接続
+	 */
+	public DAOProduct(){
+		try{
+			InitialContext initialContext = new InitialContext();
+			this.datasource = (DataSource) initialContext.lookup(AppConsts.DATASOURCE_DB_NAME);
+			this.conn = this.datasource.getConnection();
+		}catch(NamingException | SQLException e) {
+
+		}
 	}
+
+	/**
+	 * @return Connection
+	 */
+	public Connection getConn() {
+		return this.conn;
+	}
+
+	/**
+	 * @param iD セットする iD
+	 */
+	public void setId(String iD) {
+		this.id = iD;
+	}
+
+	protected abstract UsersVO executeQuery(String sqlId, String... args);
 }

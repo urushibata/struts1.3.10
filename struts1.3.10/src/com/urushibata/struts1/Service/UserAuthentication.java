@@ -5,7 +5,6 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Statement;
@@ -48,7 +47,7 @@ public class UserAuthentication {
 			LogManager.getLogManager().readConfiguration(inStream);
 			inStream.close();
 		}catch(IOException e){
-			logger.warning("ログ設定ファイルがありません" + AppConsts.LOGGING_PROPERTIES);
+			logger.warning("ログ設定ファイルがありません。" + AppConsts.LOGGING_PROPERTIES);
 		}
 		logger.info("authentication businessLogic START");
 
@@ -81,7 +80,7 @@ public class UserAuthentication {
 			dto.setVO(vo);
 		} else {
 			conn.close();
-			logger.warning("IDかパスワードが違います。");
+			logger.warning("E00010:IDかパスワードが違います。");
 			throw new ApplicationException("errors.E00010", "ID", "パスワード");
 		}
 

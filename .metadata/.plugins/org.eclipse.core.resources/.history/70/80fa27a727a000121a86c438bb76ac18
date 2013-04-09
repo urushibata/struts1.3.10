@@ -1,0 +1,7 @@
+package com.urushibata.struts1.dao.daoImpl;
+
+import com.urushibata.struts1.dao.DAOFactory;
+
+public class UserDaoFactoryImpl extends DAOFactory {
+
+}

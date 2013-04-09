@@ -1,0 +1,36 @@
+package com.urushibata.struts1.dao.daoImpl.Product;
+
+import com.urushibata.struts1.dao.DAOProduct;
+import com.urushibata.struts1.vo.UsersVO;
+
+public class UsersDAOProductImpl extends DAOProduct {
+
+	public UsersDAOProductImpl(String daoName) {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+	@Override
+	protected UsersVO select(String... args) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	@Override
+	protected UsersVO update(String... args) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	@Override
+	protected UsersVO delete(String... args) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	@Override
+	protected UsersVO insert(String... args) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+}

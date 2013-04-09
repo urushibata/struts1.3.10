@@ -2,4 +2,6 @@
 <typeInfoHistroy>
 <typeInfo handle="=struts1.3.10/C:\/Program Files\/Java\/jdk1.7.0_10\/jre\/lib\/rt.jar&lt;javax.xml.crypto.dsig.spec(ExcC14NParameterSpec.class[ExcC14NParameterSpec" modifiers="49" timestamp="1357436234218"/>
 <typeInfo handle="=struts1.3.10/C:\/Program Files\/Java\/jdk1.7.0_10\/jre\/lib\/rt.jar&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1357436234218"/>
+<typeInfo handle="=struts1.3.10/src&lt;com.urushibata.struts1.dao{DAOFactory.java[DAOFactory" modifiers="1025" timestamp="1365469874531"/>
+<typeInfo handle="=struts1.3.10/src&lt;com.urushibata.struts1.dao{DAOProduct.java[DAOProduct" modifiers="1025" timestamp="1365472942687"/>
 </typeInfoHistroy>
